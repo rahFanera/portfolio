@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FiMail } from "react-icons/fi";
-import toast from "react-hot-toast";
 
 export default function EmailButton({ email }) {
   const [isCopied, setIsCopied] = useState(false);
@@ -9,7 +8,6 @@ export default function EmailButton({ email }) {
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
     setIsCopied(true);
-    toast.success("Email Copié");
     setTimeout(() => setIsCopied(false), 2000);
   };
 
