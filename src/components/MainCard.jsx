@@ -22,7 +22,7 @@ export default function MainCard() {
   const socialLinks = {
     github: "https://github.com/rahFanera",
     linkedin: "https://www.linkedin.com/in/faneraeugene/",
-    twitter: "https://twitter.com/tonprofil",
+    twitter: "#",
   };
 
   return (
